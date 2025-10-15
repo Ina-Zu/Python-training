@@ -49,3 +49,4 @@ for key, (value, dict_num) in final_dict.items():
 # 8. Печатаем финальный результат
 print("\nFinal merged dict:")
 print(result)
+
