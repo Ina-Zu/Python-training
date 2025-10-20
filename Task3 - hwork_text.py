@@ -47,5 +47,3 @@ text = """
 """
 
 process_text(text)
-
-
