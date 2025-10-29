@@ -1,0 +1,12 @@
+name: Create folder
+
+on: workflow_dispatch
+
+jobs:
+  create-folder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create folder
+        run: mkdir -p my_new_folder
