@@ -1,0 +1,34 @@
+operation_type: news;
+text: Meeting with business partners tomorrow;
+city: London;
+/
+
+
+operation_type: news;
+text: Heavy snowstorm expected this weekend;
+city: Oslo;
+/
+
+
+operation_type: private advertisement;
+text: Selling a gaming laptop, almost new;
+expiration_date: 2025-01-20;
+/
+
+
+operation_type: private advertisement;
+text: Renting a cozy apartment downtown;
+expiration_date: 2025-03-10;
+/
+
+
+operation_type: motivational quote;
+quote: Success is not final, failure is not fatal;
+author: Winston Churchill;
+/
+
+
+operation_type: motivational quote;
+quote: Dream big, work hard, stay focused;
+author: Unknown;
+/
