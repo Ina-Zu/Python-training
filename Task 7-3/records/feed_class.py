@@ -2,16 +2,15 @@ import datetime
 import random
 from utils.normalizer import normalize_text
 
-OUTPUT_FILE = "news_feed.txt"
-
 
 class Record:
     def format_record(self):
         raise NotImplementedError()
 
-    def save(self):
-        with open(OUTPUT_FILE, "a", encoding="utf-8") as f:
+    def save(self, output_file):
+        with open(output_file, "a", encoding="utf-8") as f:
             f.write(self.format_record())
+        print("✅ Record added!")
 
 
 class News(Record):
@@ -52,3 +51,4 @@ class MotivationalQuote(Record):
                 f"Author: {self.author}\n"
                 f"Motivation score: {self.motivation_score}/10\n"
                 f"--------------------\n")
+
