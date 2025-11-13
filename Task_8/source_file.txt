@@ -1,0 +1,16 @@
+operation_type: news;
+text: New shopping mall opening soon;
+city: Berlin;
+/
+
+
+operation_type: private advertisement;
+text: Selling my old car, good condition;
+expiration_date: 2025-12-31;
+/
+
+
+operation_type: motivational quote;
+quote: Hard work beats talent when talent doesn’t work hard;
+author: Tim Notke;
+/
