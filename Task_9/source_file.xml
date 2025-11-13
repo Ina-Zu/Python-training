@@ -1,0 +1,17 @@
+<records>
+    <record>
+        <operation_type>news</operation_type>
+        <text>Local park to host music festival</text>
+        <city>Madrid</city>
+    </record>
+    <record>
+        <operation_type>private advertisement</operation_type>
+        <text>Apartment for rent near city center</text>
+        <expiration_date>2025-12-20</expiration_date>
+    </record>
+    <record>
+        <operation_type>motivational quote</operation_type>
+        <quote>Hard work beats talent when talent doesn't work hard</quote>
+        <author>Tim Notke</author>
+    </record>
+</records>
