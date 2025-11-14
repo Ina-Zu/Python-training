@@ -1,0 +1,18 @@
+[
+  {
+    "operation_type": "news",
+    "text": "Big data conference starts today",
+    "city": "Berlin"
+  },
+  {
+    "operation_type": "private advertisement",
+    "text": "Looking for a flatmate in NYC",
+    "expiration_date": "2026-01-15"
+  },
+  {
+    "operation_type": "motivational quote",
+    "quote": "Never give up on your dreams",
+    "author": "Anonymous"
+  }
+]
+

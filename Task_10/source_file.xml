@@ -1,0 +1,19 @@
+<records>
+    <record>
+        <operation_type>news</operation_type>
+        <text>Big data conference starts today</text>
+        <city>Berlin</city>
+    </record>
+
+    <record>
+        <operation_type>private advertisement</operation_type>
+        <text>Looking for a flatmate in NYC</text>
+        <expiration_date>2026-01-15</expiration_date>
+    </record>
+
+    <record>
+        <operation_type>motivational quote</operation_type>
+        <quote>Never give up on your dreams</quote>
+        <author>Anonymous</author>
+    </record>
+</records>
