@@ -9,22 +9,27 @@ class JSONRecordProvider:
 
     def read_records(self):
         if not os.path.exists(self.filepath):
-            print(f"❌ {self.filepath} not found!")
+            print(f"❌ JSON file {self.filepath} not found!")
             return []
 
         with open(self.filepath, "r", encoding="utf-8") as f:
             data = json.load(f)
 
-        records = []
-        for item in data["records"]:
-            op = item["operation_type"].lower()
+        # Поддержка: одного объекта или списка
+        records = data if isinstance(data, list) else [data]
+        result = []
+
+        for item in records:
+            op = item.get("operation_type", "").lower()
             if op == "news":
-                records.append(News(item["text"], item["city"]))
+                result.append(News(item["text"], item["city"]))
             elif op == "private advertisement":
-                records.append(PrivateAd(item["text"], item["expiration_date"]))
+                result.append(PrivateAd(item["text"], item["expiration_date"]))
             elif op == "motivational quote":
-                records.append(MotivationalQuote(item["quote"], item["author"]))
+                result.append(MotivationalQuote(item["quote"], item["author"]))
+            else:
+                print(f"⚠ Unknown operation type: {op}")
 
         os.remove(self.filepath)
         print(f"✅ {self.filepath} processed and removed!")
-        return records
+        return result
